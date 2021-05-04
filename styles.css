@@ -31,6 +31,10 @@ body {
     z-index: 10;
 }
 
+.play-img {
+    margin-bottom: 15px;
+}
+
 
 .img-container {
     position: relative;
@@ -103,6 +107,7 @@ body {
 }
 
 .music-info {
+    margin-top: 12px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 15px 15px 0 0;
     position: absolute;
