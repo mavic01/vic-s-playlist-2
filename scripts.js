@@ -87,8 +87,9 @@ function setProgress(e){
 Trial
 */
 function loadImage(){
-    playImg.setAttribute('src', 'images/play-image.jpg')
+    playImg.setAttribute('src', 'images/home.jpg')
     playImg.classList.add('img-container')
+    playImg.classList.add('play')
 }
 
 function  removeImage(){
