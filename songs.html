@@ -7,26 +7,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="icon" href="images/music-logo.jpg" type="image/icon type">
     <!-- <link rel="stylesheet" href="styles.css"> -->
-    <title>Music</title>
+    <title>Songs</title>
     
     <style>
-            body {
+            
+
+        body {
                 height: 100vh;
                 margin: 0;
                 font-family: 'Lato', sans-serif;
-                background:rgb(41, 141, 187) 92% ;
+                background-color:rgb(84, 67, 107);
                 
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                
-            }
+        }
 
             #container{
                 height: 100vh;
                 width: 100%;
-                background:rgb(41, 141, 187)  92% 
+                background:rgb(84, 67, 107)92%
                     ;
         
                 background-size: cover;
@@ -42,69 +43,42 @@
                 font-size: 1.5em;
                 cursor: pointer;
                 padding-bottom: 12px;
+                
             }
 
             h1 {
-                    color: rgb(206, 13, 180);
+                    color: rgb(102, 109, 245);
                     animation: fadecolor 1s infinite;
                 }
                 @keyframes fadecolor {
-                    from {color: rgb(206, 13, 180) } 
-                    to {color: rgb(4, 87, 90)}
-            }
+                    from {color: rgb(102, 109, 245) } 
+                    to {color: rgb(149, 151, 184)}
+                }
             h1 {
                 position: relative;
                 left: 40px;
-                margin-top: 1.5em;
+                margin-left: 7%;
             }
-            /* a {
+            a {
                 
                 font-size: 20px;
                 text-decoration: none;
                 color:#fff;
-                background-color: #055C9D;
+                
+            }
+            button {
+                background-color: rgb(124, 131, 253);
                 border-radius: 10px;
-                padding: .3em;
-                box-shadow: 0 20px 20px 0 rgba(2, 78, 40, 0.6);
-                position: relative;
-                top: 20px;
-            }*/
-                
-                .btn {
-                    background: #3498db;
-                    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-                    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
-                    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
-                    background-image: -o-linear-gradient(top, #3498db, #2980b9);
-                    background-image: linear-gradient(to bottom, #3498db, #2980b9);
-                    -webkit-border-radius: 28;
-                    -moz-border-radius: 28;
-                    border-radius: 28px;
-                    text-shadow: 1px 1px 3px #c94ec9;
-                    font-family: Arial;
-                    color: #ffffff;
-                    font-size: 20px;
-                    padding: 5px 8px 5px 8px;
-                    text-decoration: none;
-                    position: relative;
-                    top: 20px;
-                }
-                
-                .btn:hover {
-                    background: #3cb0fd;
-                    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-                    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-                    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-                    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-                    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-                    text-decoration: none;
-                }
-
+                padding: 4px;
+                box-shadow: 0 20px 20px 0 rgba(3, 85, 27, 0.6);
+                margin-top: 30px;
+                margin-left: 45%;
+            }
 
                 .link {
-                    text-align: center;
-                }
-        
+                 text-align: center;
+            }
+
             </style>
 
 </head>
@@ -112,15 +86,14 @@
     <!-- <div class="link"><a href="index.html">Home</a></div> -->
     
     <div id="container">
-        <div class="link"><a href="index.html" class="btn"><i>Home</i></a></div>
+        <button><a href="index.html" target="_blank"><i>Home</i></a></button>
         <h1>Song List</h1>
         
     </div>
 
 
 <script>
-  const songs = [
-    'Alan Walker - Darkside (feat. AuRa and Tomine Harket)', 'Alan Walker - Faded (AUDIO)', 'Alan Walker_ Sabrina Carpenter & Farruko - On My Way (Lyrics)', 'Ariana Grande - Side To Side (ft. Nicki Minaj) [Audio]', 'Ariana Grande - No Tears Left To Cry (Audio)', 'Ariana Grande - 7 rings (Audio)', 'Anson Seabra Chill Mix', 'AURORA - I Went Too Far - Copy', 'Angus & Julia Stone - For you', "Angus and Julia Stone - Big Jet Plane", "Angus and Julia Stone - I'm Not Yours", 'AURORA - Runaway', 'Billie Eilish - everything i wanted', 'Billie Eilish - listen before i go', 'Billie Eilish - Your Power (Official Music Video)', 'Billie Eilish - when I was older', 'Billie Eilish - ilomilo', 'Billie Eilish - OCEAN EYES', 'Billie Eilish - watch (Audio)','Billie_Eilish_Khalid_-_lovely_HitNaijacom', '08 BRACKETS', 'Burna Boy On The Low', 'Burna-Boy-Gum-Body-feat-Jorja-Smith-(JustNaija.com)', "Burna Boy - Real Life feat. Stormzy [Official Audio]", "Burna Boy - 23 [Official Audio]", 'Burna Boy - 20 10 20 (Audio)', "Larry Gaaga - Baba Nla ft. 2Baba, Burna Boy", "Simi ft 2baba - Original Baby", "2Baba ft. FalzRise Up", 'Cassandra Ambiguous Norway', 'Cassandra Hard Drive', "Baz Luhrmann - Everybody's free to wear sunscreen", 'cassandra Jenkins - Crosshairs', 'cassandra Jenkins - Michelangelo', 'Coldplay - A message-1', 'Coldplay sparks', 'Coldplay - Always In My Head(Lyrics Video)', 'Coldplay - Champion Of The World', 'Coldplay - In My Place','Coldplay - Talk (Official)', 'Coldplay trouble', 'DaBaby_-_Bop', 'David Guetta - Shot Me Down ft. Skylar Grey (Lyric Video)', 'Davido-D-G-ft-Summer-Walker-(JustNaija.com)', 'Deep End - Fousheé', 'Disturbed - The Sound Of Silence [Official Music Video]', 'Drake - Toosie Slide', 'drivers license', "Olivia Rodrigo - happier", 'Eminem - Darkness', 'Eminem - Going Through Changes -', 'Eminem - Never Love Again', 'Eminem_-_Good-Guy-', 'Eminem_When_Im_Gone', 'eminem-tragic-endings-ft-skylar-grey', 'Fleurie - Hurricane (Official Video)-1', "Ruelle, Fleurie - Carry you (Lyrics)", 'Fleurie - Hurts Like Hell ( With Lyrics )', 'Freya Ridings - Lost Without You (Official Video)', 'Gotye - Somebody That I Used To Know HQ Sound', 'Greg Laswell - Dodged A Bullet', "Highs & LowsEagle's Wings - Hillsong Worship", "Closer Than You Know - of Dirt and Grace - Hillsong UNITED", "The Lord PS 39s Prayer- Hillsong Worship", "Days Gone By (Live at Hillsong Conference) - Hillsong Young & Free", "Hillsong Heart Of God (Official Lyric Video)", "Hillsong - I Surrender",  "As It Is (In Heaven) - Hillsong Worship", "The Passion - Hillsong Worship", "Hillsong Charity Gayle - Thank You Jesus for the Blood (Live)", "Be Still - Hillsong Worship", 'I Love Your Presence - Jenn JohnsonHere Is Love', 'Hosanna - Hillsong Worship', "Desert song Hillsong", 'Hillsong UNITED A Million Suns Lyric Video', 'hillsong Even When It Hurts', 'hillsong  Jenn Johnson of God (Official) - Bethel Music & Jenn Johnson VICTORY', 'hillsong - Jenn Johnson We Will Not Be Shaken-1', 'hillsong You re Gonna Be Okay - Brian & Jenn Johnson After All These Years', 'Oceans (Where Feet May Fail) - Hillsong UNITED (Lyrics)', "In Control - Hillsong Worship", "Take All of Me - Recorded Live in Houston 2016 - Hillsong UNITED", "Grace To Grace - Hillsong Worship", 'Bones - Hillsong United', 'hillsong Brooke Ligertwood & Taya Smith - NEW SONG 2018 (Remembrance)', 'hillsong Oceans Will Part Hillsong (Featuring Annie Garratt)', 'hillsong Thank You Jesus Fellowship Songs', "Azadus I See Ft 2Baba", 'Justin Timberlake - Mirrors (Audio)', 'Justin Timberlake - What Goes Around Comes Around HQ', 'God Loves Ugly - Jordin Sparks', "Jorja Smith - Blue Lights (Official Audio)", "Jorja Smith - The One", "Jorja Smith - Bussdown (Audio) ft. Shaybo", "Jorja Smith - Addicted (Lyrics)", 'Jorja-Smith-Let-Me-Down', 'Jay-Z - Marcy Me (DawnFoxes.com)-1', 'Jcole_-_Love_Yourz_gistmp3.com.ng', 'Stranded Lyrics Jennifer Paige', 'Johnny Drille - Mystery Girl', 'Katy Perry The One That Got Away (Audio HQ)', "Kesha - Praying (Official Video)", 'Khalid - Better (Official Audio)', "Jilex Anderson - Afro Lover", 'Kojo Funds - Check (feat. RAYE)', 'K-Raye & Rudimental - Regardless (Official Audio)', 'Lana Del ReySummertime Sadness Audio', 'Lana Del Rey - Born To Die (Official Audio)', 'Lana Del Rey - Video Games', 'Lana Del ReyBlue Jeans lyrics', 'Labrinth - still dont know my name', 'Lady Antebellum - Need You Now', 'Lucy Dacus - Thumbs (Official Audio)', "LAngel Haze - Cleaning Out My Closet", "LAngel Haze ft. Sia - Battle Cry", "Lucy Dacus - Brando (Official Lyric Video)", 'Lucy Dacus - Addictions (Official Music Video)', 'Lucy Dacus - La Vie En Rose (Lyric Video)', 'Marshmello & Anne-Marie - FRIENDS (Lyric Video) OFFICIAL FRNE ANTHEM', 'Marshmello ft. Khalid - Silence (Official Lyric Video)', 'Olamide - Rock', 'OST Julieta Venegas - Ese Camino (Official Video)', 'OST Regina Spektor - Youve Got Time [Official Audio]', "Orange Is The New Black Season 5 ending song", 'OST Rodrigo Amarante - Tuyo (Générique Narcos) [Lyrics video]', "OST 02Shin Seung HunLove Of Iris", "OST 11-Destiny Love (IRIS OST)", "OST 13-Sad Love (IRIS OST)", "OST Can't You Come Back", "OST Insooni - Heaven, please (Jumong Original Soundtrack)", "OST Karen O - Anti-Lullaby", "OST B4 I Fall GEMS- WO u (Without You)", 'Passenger Catch In The Dark (Official Video)-1', 'passenger home', 'Passenger When We Were Young (Official Video)-1', 'passengerr patient love', 'Pink - Family portrait Lyrics', "P!nk - Please Don't Leave Me (Audio)", 'P!nk - Try (Official Lyric Video)', 'P!nk & Willow Sage Hart - Cover Me In Sunshine (Lyrics)', "Rag'n'Bone Man, P!nk - Anywhere Away from Here (Official Audio)", 'Who Knew - P!nk (Audio Original)', 'Portugal. The Man - Feel It Still (Lyrics Lyric Video)', 'Resonance-lee lee', 'Rita Ora - Anywhere', 'Rita Ora - Let You Love Me [Official Video]', 'Bag of Money (feat. Rick Ross & T-Pain)', "DJ Khaled - I'm On One (Explicit Version) ft. Drake, Rick Ross, Lil Wayne", 'Free Mason', 'Meek Mill Ft. Nicki Minaj & Chris Brown - All Eyes On You (Official Audio)', 'Rick Ross - Diced Pineapples ft. Wale & Drake (Explicit)', 'Rick Ross - Stay Schemin (feat. Drake and French M', 'Rick Ross - Aston Martin Music ft. Drake & Chrisette Michele (Official Video)', 'Rick Ross - Aston Martin Music ft. Drake, Chrisette Michele', 'Rick Ross - Sorry ft. Chris Brown (Explicit)', 'Rita Ora - Only Want You [Official Audio]', 'Rosie Carney - Awake Me', 'Rosie Carney Bullet Proof ... I Wish I Was', "Runtown - For Life", 'Sarz_x_WurlD_-_Ego_Nobody_Wins_', 'Sasha Sloan - Older (Lyric Video)', 'Kygo - This Town ft. Sasha Sloan (Official)', 'Selena Gomez, Marshmello - Wolves (Lyrics)', 'Steve CrownWe Wait On You (Official Audio)', "Stormrex - 30 (Official Audio) ft. iLLbliss", 'Surf Mesa - ily (i love you baby) (feat. Emilee) (Official Audio)', 'Kygo, Sasha Sloan - I ll Wait', 'Sasha Sloan - Again (Audio)', 'Sasha Sloan - Dancing With Your Ghost', 'Sasha Sloan - Too Sad To Cry', 'Sasha Sloan - Thank God', 'Sasha Sloan - Until It Happens To You', 'Shy_Martin_-_Lose_You_Too', 'Target You (feat. Syemca)', "2Face - Dance In The Rain", 'Taylor Swift - Last Kiss (Audio)', 'Taylor Swift - The Best Day', 'Taylor Swift - Dear John (Audio)', 'Speak Now', 'Taylor Swift - Love Story (Audio)', "Taylor Swift safe and sound", "Sad Beautiful Tragic", "Taylor Swift - Change (Taylor's Version) (Lyric Video)", 'Taylor Swift - The Story of Us (Audio)', "Highway Don't Care", 'Taylor Swift - Fifteen (Audio)', 'Taylor Swift - Mine (Audio)', 'Taylor Swift - Ronan', 'Taylor Swift - Run', 'Taylor Swift - You Belong With Me (Audio)', 'Taylor Swift All Too Well', 'Taylor Swift feat.Ed Sheeran - Everything Has Changed (Audio)', 'Two Is Better Than One - Boys Like Girls (Feat. Taylor Swift) (Lyrics)', 'TaylorSwiftBreathe',  'Taylor Swift - cardigan', 'Taylor Swift Begin Again (Audio)', 'Taylor Swift - Back to December (Audio)', 'Taylor Swift - champagne problems (Official)', 'Taylor Swift - Delicate (Audio)', 'The Lucky One', 'Taylor Swift - Enchanted (Audio)', 'Taylor Swift - Long Live (Audio)', 'Taylor Swift - This Love', "Taylor Swift - You're Not Sorry (Taylor's Version) (Lyric Video)", 'Taylor Swift Today was a fairytale', 'The Last Time - Taylor Swift (feat. Gary Lightbody) LYRICS', 'The Moment I Knew - Taylor Swift', 'The Fray How To Save A Life', 'The Weeknd - In Your Eyes (Official Audio)', 'The Weeknd - Save Your Tears (Official Audio)', 'Tems - Damages', 'TEMS TRY ME', "Tems - The Key (Audio)", 'Teni-Uyo-Meyo', 'The Paper Kites - By My Side feat. Rosie Carney', 'The Paper Kites - Climb On Your Tears (feat. Aoife O Donovan)', 'The Paper Kites - For All You Give (feat. Lucy Rose)', 'The Paper Kites - It s Not Like You', 'The Paper Kites - On the Train Ride Home', 'The World to Come ft. Josephine Foster', 'Wale - Bad feat. Tiara Thomas [Official Music Video]', 'Wale f. Rihanna - Bad (Remix) [Official Audio]', 'Wale Ft. Usher - Matrimony (Official Audio)', 'Wande-Coal-Again', 'Wild Thoughts feat Rihanna Bryson Tiller', "WizKid - Reckless (Audio)", 'Wizkid-Ginger-ft-Burna-Boy', "Skepta & WizKid - 'Energy (Stay Far Away)' (Official Video)", "WizKid - Longtime (Audio) ft. Skepta", "WizKid - Blessed (Audio) ft. Damian Marley", "WizKid - Smile (Audio) ft. H.E.R.", "WizKid - Piece of Me (Audio) ft. Ella Mai", "WizKid - Essence (Audio) ft. Tems", "WizKid - No Stress (Audio)", "WizKid - Grace (Audio)", 'Wizkid-Joro-(JustNaija.com)', 'Yelawolf Ft. Eminem - Best Friend [320]']
+    const songs = ["Aldous Harding - No Peace At All OITNB", "Aldous Harding - Imagining My Man", "Aldous Harding - Elation (Official Video)", "Aldous Harding - Zoo Eyes (Official Video)", "Aldous Harding - Swell Does the Skull", "Aldous Harding - Blend (Official Video)", "Alicia Keys - Unthinkable", "Alicia Keys - New York [HQ]", "Alicia Keys - LIke You'll Never See Me Again", "Anson Seabra - Broken (Official)", "Anson Seabra - Emerald Eyes (Official)", "Anson Seabra - I Can t Carry This Anymore", "Anson Seabra - It's Raining, It's Pouring", "Anson Seabra - Kerosene (Official)", "Anson Seabra - Last Time", "Anson Seabra - Robin Hood Sarcastic Sounds Remix", "Anson Seabra - Somewhere in Ann Arbor (Official)", "Anson Seabra - Stay With Me", "Anson Seabra - Trying my best", "Anson Seabra - Walked Through Hell", "Anson Seabra - Welcome to Wonderland", 'Anna Leone - I Never Really (Official Video)', 'Anna Leone - My Soul I (Official Video)', 'Anna Leone - Still I Wait (Official Video)', 'Anna Leone - Wondering (Audio)', "Arlissa - Healing (Acoustic)", 'Ari Lennox - Shea Butter Baby (Lyrics)', "Ashley Serena - In your arms", "Ashley Serena - Lullaby of Woe", "Ashley Serena - The Witch's Daughter", 'AURORA - Exist For Love - Copy', "AURORA - Runaway", "AURORA - I Went Too Far", "AURORA - Lucky", 'AURORA - The Seed', "Askjell - To Be Loved (Lyrics) Ft. AURORA", "Avril Lavigne - When You're Gone - Audio", "Avril Lavigne - Wish You Were Here - Audio", "Innocence", "Beyoncé - Broken-Hearted Girl", "Beyoncé - Halo (Audio)", "Beyonce- Once In A Lifetime", "I Was Here", "Billie Marten - Bird (Official Audio)", 'breathless by shayne ward with lyrics', "Camila Meza - Cucurrucucu OITNB", "Charlotte OC - Where It Stays", 'Charlie Puth - Attention [Official Video]', "A Thousand Years - Christina Perri -Official Audio-", "CLANN - I Hold You", "Digital Daggers - Save Us From Ourselves OITNB", "Coldplay - Always In My Head", "Coldplay - Fix You", "Coldplay - The Scientist", "Coldplay - What If", "Coldplay sparks", "Coldplay trouble", "Coldplay warning sign", "Daniel Bedingfield - If You're Not the One (Audio)", "Enya - If I Could Be Where You Are", "Enya - Only Time", "Enya - So I Could Find My Way", "Enya - The Humming", "Eurielle - Carry Me [Emotional Vocal Orchestral]", "Eurielle - Eurielle [Emotional Vocal Orchestral]", "Eurielle - Hate Me (Lyrics)", "Eurielle - Song of Durin", 'Fades Away (Tribute Concert Version at Friends Arena, Stockholm2019)', 'Fenne Lily - Berlin', 'Fenne Lily - Bud', 'Fenne Lily - Car Park (Official Audio)', 'Fenne Lily - Hypochondriac (Official Audio)', 'Fenne Lily - On Hold', 'Fenne Lily - Three Oh Nine', 'Fenne Lily - Top To Toe', 'Fenne Lily - What s Good', 'Fenne Lily birthday', 'Fenne Lily Brother', 'Fenne Lily Elliott', 'Fenne Lily i Used To Hate My Body But Now I Just Hate You', 'Fenne Lily I, Nietzsche', 'Fenne Lily laundry and Jet Lag', 'Fenne Lily More Than You Know', 'Fenne Lily Someone Else s Trees', 'Fenne Lily The Hand You Deal', 'Fenne Lily. - For A While ( )', "Fenne Lily Katie Malco's Brooklyn cover", 'Henry Jamison · Tourism (feat. Fenne Lily) [Official Audio]', 'Keir, Fenne Lily - leave a light on', 'Max Jury - The Desperate Kingdom of Love (with Fenne Lily)', "gregory alan isakov - san luis", "Gregory Alan Isakov- Amsterdam", "Gregory Alan Isakov- Honey, It's Alright", "Gregory Alan Isakov- If I Go, I'm Goin", "Gregory Alan Isakov - This Empty Northern Hemisphere", "Gregory Alan Isakov- She Always Takes It Black", "Gregory Alan Isakov- That Moon Song", "Gregory Alan Isakov- The Stable Song", "Gregory Alan Isakov- Time Will Tell", "Kodaline - High Hopes Lyrics", "Hollow Coves - Blessings (Official Audio)", "Hollow Coves - The Woods", "Hollow Coves - These Memories", "Ibeyi - Waves", "Isak Danielson - If You Ever Forget That You Love Me (Official Video)", 'In Control - Hillsong Worship', 'Jhene Aiko - Drinking and Driving (Lyrics)', 'Jhene_Aiko_-_Moments_ft_Big_Sean(songbaze.com)', 'Johnny Drille - Bad Dancer (Performance Video)', "Kalandra - Borders (Lyrics)", "Kalandra - Brave New World (Lyric Video)", "Kalandra - Ensom (Unplugged)", "Kalandra - Helvegen", "KALANDRA - Slow Motion (Subtitulada a español)", "Kalandra - Virkelighetens Etterklang", "Kalandra - Waiting Game", "Kalandra - Wonderland", 'Kina - Can We Kiss Forever ft. Adriana Proenza', 'Kina - get you the moon ft. Snow', 'Khalid & Normani - Love Lies (Official Audio)', 'Khalid - OTW (Official Audio) ft. 6LACK, Ty Dolla $ign', 'Ladipoe - Know You FtSimi (Official Audio)', 'Lukas Graham - 7 Years', "Lily Kershaw - Darker Things", "Lily Kershaw - Dream a Little Dream of Me", "SYML feat. Lily Kershaw- Where's My Love [French version]", "Lily Kershaw - End of the World", "Lily Kershaw - Fears Become Wishes", "Lily Kershaw - Forever Young", "Lily Kershaw - Myth of New York", "Lily Kershaw - Ashes Like Snow", "Lily Kershaw - New Names", "Lily Kershaw - Now & Then (feat. Goody Grace) [OFFICIAL VIDEO]", "Lily Kershaw - Promises", "Lily Kershaw - Sleep PeacefullyLily Kershaw", "Lily Kershaw - Smile", "Lily Kershaw - Soft Dark Nothing", "Lily Kershaw - The Last Light", "Lily Kershaw - The Sea (feat. Jon Bryant)", "Lily Kershaw - Unrequited Night", "Lily Kershaw-My Way", "Lykke Li - Sleeping Alone", "Cocoon, Lola Marsh - I Got You", "Days to come - Lola Marsh", "Lola Marsh - Like in the movies", "Lola Marsh - Only For A Moment", "Lola Marsh - She's a Rainbow (audio)", "Lola Marsh - Wishing Girl (Official Audio)", "Lucy Dacus - Yours & Mine (Lyrics)", "Marathon (In Roses)", 'Natalie Taylor - Surrender', "Nina Nesbitt - The Hardest Part", "Nina Nesbitt - Things I Say When You Sleep", "Nouvelle Vague- In A Manner Of Speaking", "Oh Wonder - Technicolour Beat hq", "The Cinematic Orchestra - To Build A Home", "Passenger - Life's For The Living", "Passenger The Way That I Love You (Official Audio)", "Passenger - Remember to Forget", "Passenger And I Love Her", "passenger everything", "Passenger - Words (lyric)", "Passenger Hell Or High Water", "passengerr patient love", "Rachel Hardy - Boyd - The Last Goodbye Cover", "Rachel Hardy - Dragon Age Inquisition", "Rachel Hardy - Jenny of Oldstones", "Rachel Hardy - My Jolly Sailor Bold", "Rachel Hardy - My mother told me", "Rachel Hardy - The misty mountains cold", "Rachel Hardy - Toss a coin", "Rachel Hardy - VIKINGS - If I Had a Heart", "Rachel Hardy - Vikings - Lagertha Death Song Theme [6x06]", "Rachel Hardy - Wayfaring Stranger", "Regina Price - Safe", "Regina Price - We Come Together", "Regina Price As You Fly", 'Rihanna - Love On The Brain', "Rihanna - Diamonds (Audio)", 'RUELLE - THE OTHER SIDE (OFFICIAL MUSIC VIDEO)', 'Rosie Carney Black Star', 'Rosie Carney - Hight And Dry', 'Rosie Carney - Thousand (feat. Lisa Hannigan) [Official Audio]', 'Rosie Carney - Winter', 'Rosie Carney 7', 'Rosie Carney Bare', 'Rosie Carney Bullet Proof ... I Wish I Was', 'Rosie Carney Humans', 'Rosie Carney Orchid', 'Rosie Carney Your Moon', 'The Paper Kites - By My Side feat. Rosie Carney', "Sam Smith - I'm Not The Only One (lyrics) (HD)", 'Sam Smith - My Oasis (Lyric Video) ft. Burna Boy', "Sam Smith - Writing's On The Wall (Audio)", 'SHY Martin - Out of My Hands (Lyrics)', "Mike Perry - The Ocean (ft. Shy Martin) [Lyrics CC]", "SHY Martin - Feelings (Official Lyric Video)", "So I Say Original - Honor Hunter", 'SIMI, Ms Banks - THERE FOR YOU (Official Music Video)', 'Sophie Hunger - Le vent nous portera', "Pomme - à perte de vue (Clip Officiel)", "Pomme - Göttingen (Barbara) - Paroles Lyrics", "Pomme - Je sais pas danser", "Pomme - On brûlera", "Oscar Anton & Clementine - nuits d'été", "Maëlle - Sur un coup de tête", "Clio, Iggy Pop - L'appartement (en duo avec Iggy Pop) (Clip officiel)", "Clio - Tristan", "CLIO - Des équilibristes", "CLIO - Plein les doigts", "CLIO - Chamallow's Song", "CLIO - What What", "Clio - Elle voudrait [Letra Español - Paroles]", "CLIO - Romy S", "CLIO - Éric Rohmer est mort", "CLIO - Ai-je perdu le nord Subs Español", "CLIO - Haussmann à l'envers", "CLIO - Amoureuse [CLIP OFFICIEL]", "CLIO - T'as vu [CLIP OFFICIEL]", "CLIO -  Déjà Venise (Clip officiel)", "Vendredi sur Mer - Les filles désir [Paroles]", "Vendredi sur Mer - Écoute chérie (Clip officiel)", "Sky Li  - Bittersweet", 'SZA - Good Days (Audio)', "Sasha Sloan - when was it over (Lyric Video) ft. Sam Hunt", "sød ven - catacombs", "SYML - Symmetry [Official Audio]", "SYML-The War", "SYML - Girl [Official Music Video]", "SYML - Flags [Official Music Video]", "SYML - MrSandman (Audio)", "SYML - Where's My Love [Official Audio]", "SYML - DIM [Official Lyric Video]", "SYML - Fear Of The Water", "SYML - Take Me Apart [Official Audio]", "SYML - You Knew It Was Me [Full EP] (1)", "Those Who Wish Me Dead Soundtrack Ending - Lighthouse (William Prince)", "William Prince - Breathless [Official Video]", "Taylor Swift - Teardrops On My Guitar (Audio)", "Taylor Swift - If This Was A Movie", "The Saxophones - If You're On The Water", "The Saxophones - Just You [Official Audio]", "The Saxophones - Picture [Official Audio]", "The Saxophones - Singing Desperately [Official Audio]", "Tiesto - The Business (Official Lyric Video)", 'Tom Rosenthal - About The Weather', 'Tom Rosenthal - For You To Be Here (Official Music Video)', 'Tom Rosenthal - Go Solo', 'Tom Rosenthal - Going To Be Wonderful', 'Tom Rosenthal - It’s Been a Year', 'Tom Rosenthal - Its OK (Official Video)', 'Tom Rosenthal - Run For Those Hills, Babe', 'Tom Rosenthal - Worries', 'Tom Rosenthal and Fenne Lily - Have We Met Before', 'Tom Rosenthal feat. Billie Marten - Hugging You [Official Video]', "Yuna - Crush (Audio) ft. Usher", 'Zayn_Malik_-_Obsession_(djlist.net)','Zayn-Entertainer-AllNaijaEntertainment.com_.ng_']
     const cont = document.getElementById('container') 
     const ul = document.createElement('ul')
     ul.setAttribute('id', 'theList')
