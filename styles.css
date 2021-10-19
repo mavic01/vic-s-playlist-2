@@ -273,6 +273,7 @@ h1 {
 
 .label{
     background-color: #111;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
